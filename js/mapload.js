@@ -4,220 +4,218 @@ var election = new Datamap({
   geographyConfig: {
     highlightBorderColor: '#bada55',
    popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + '<br>Electoral Votes:' +  data.electoralVotes + ' '
+      return '<div class="hoverinfo">' + geography.properties.name + '<br>Obesity Rate Percentage(Adults):' +  data.obesityRate + ' '
     },
     highlightBorderWidth: 3
   },
 
   fills: {
-  'Republican': '#CC4731',
-  'Democrat': '#306596',
-  'Heavy Democrat': '#667FAF',
-  'Light Democrat': '#A9C0DE',
-  'Heavy Republican': '#CA5E5B',
-  'Light Republican': '#EAA9A8',
+  'Very High Obesity': '#800080',
+  'High Obesity': '#FFFF00',
+  'Moderate Obesity': '#FFA500' ,
+  'Low Obesity' : '#40FF40'
   defaultFill: '#EDDC4E'
 },
 data:{
   "AZ": {
-      "fillKey": "Republican",
-      "electoralVotes": 5
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 29 
   },
   "CO": {
-      "fillKey": "Light Democrat",
-      "electoralVotes": 5
+      "fillKey": "Low Obesity",
+      "obesityRate": 22.3
   },
   "DE": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 30.7
   },
   "FL": {
-      "fillKey": "UNDECIDED",
-      "electoralVotes": 29
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.4
   },
   "GA": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.4
   },
   "HI": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Low Obesity",
+      "obesityRate": 23.8
   },
   "ID": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.4
   },
   "IL": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.6
   },
   "IN": {
-      "fillKey": "Republican",
-      "electoralVotes": 11
+      "fillKey": "High Obesity",
+      "obesityRate": 32.5
   },
   "IA": {
-      "fillKey": "Light Democrat",
-      "electoralVotes": 11
+      "fillKey": "High Obesity",
+      "obesityRate": 32
   },
   "KS": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.2
   },
   "KY": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 34.2
   },
   "LA": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Very High Obesity",
+      "obesityRate": 35.5
   },
   "MD": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 29.9
   },
   "ME": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 29.9
   },
   "MA": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Low Obesity",
+      "obesityRate": 23.6
   },
   "MN": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.8
   },
   "MI": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 32.5
   },
   "MS": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Very High Obesity",
+      "obesityRate": 37.3
   },
   "MO": {
-      "fillKey": "Republican",
-      "electoralVotes": 13
+      "fillKey": "High Obesity",
+      "obesityRate": 31.7
   },
   "MT": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 25.5
   },
   "NC": {
-      "fillKey": "Light Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.8
   },
   "NE": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 32
   },
   "NV": {
-      "fillKey": "Heavy Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 25.8
   },
   "NH": {
-      "fillKey": "Light Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 26.6
   },
   "NJ": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.4
   },
   "NY": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 25.5
   },
   "ND": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.9
   },
   "NM": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 28.3
   },
   "OH": {
-      "fillKey": "UNDECIDED",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.5
   },
   "OK": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 32.8
   },
   "OR": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 28.7
   },
   "PA": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 30.3
   },
   "RI": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 26.6
   },
   "SC": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 32.3
   },
   "SD": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 29.6
   },
   "TN": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 34.8
   },
   "TX": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 33.7
   },
   "UT": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 25.4
   },
   "WI": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 30.7
   },
   "VA": {
-      "fillKey": "Light Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 29
   },
   "VT": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.1
   },
   "WA": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 28.6
   },
   "WV": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Very High Obesity",
+      "obesityRate": 37.7
   },
   "WY": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 27.7
   },
   "CA": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 25
   },
   "CT": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "Moderate Obesity",
+      "obesityRate": 26
   },
   "AK": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "High Obesity",
+      "obesityRate": 31.4
   },
   "AR": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Very High Obesity",
+      "obesityRate": 35.7
   },
   "AL": {
-      "fillKey": "Republican",
-      "electoralVotes": 32
+      "fillKey": "Very High Obesity",
+      "obesityRate": 35.7
   }
 }
 });
