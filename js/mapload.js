@@ -4,16 +4,16 @@ var election = new Datamap({
   geographyConfig: {
     highlightBorderColor: '#bada55',
    popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + '<br>Obesity Rate Percentage(Adults):' +  data.obesityRate + ' '
+      return '<div class="hoverinfo">' + geography.properties.name + '<br>Obesity Rate Percentage(Adults):' +  data.obesityRate + '%'
     },
     highlightBorderWidth: 3
   },
 
   fills: {
   'Very High Obesity': '#800080',
-  'High Obesity': '#FFFF00',
+  'High Obesity': '#FF0000',
   'Moderate Obesity': '#FFA500' ,
-  'Low Obesity' : '#40FF40'
+  'Low Obesity' : '#40FF40',
   defaultFill: '#EDDC4E'
 },
 data:{
