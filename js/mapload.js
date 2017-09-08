@@ -220,3 +220,7 @@ data:{
 }
 });
 election.labels();
+
+$(document).ready(function(){
+  $("#title").delay(2000).animate({ opacity: 1 }, 700);
+});
