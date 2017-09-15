@@ -14,16 +14,28 @@
     * {
       box-sizing: border-box;
       font-family: 'Work Sans';
+      background-color: white
+    }
+    body{
+      background-color: white
+    }
+
+    h3{
+      color: white;
     }
     
     .accontainer {
       max-width: 700px;
       margin: 0px auto 30px auto;
+      background-color: white
+      color: red;
+
     }
     
     .ac {
       border: 1px #000 solid;
       margin-bottom: 15px;
+      background-color: white
     }
     
     .ac>h3 {
@@ -31,6 +43,7 @@
       background-position: center right;
       margin: 10px;
       padding: 5px;
+      background-color: black
     }
     
     .ac_content:after {
@@ -39,20 +52,24 @@
       display: block;
       height: 0;
       clear: both;
+      background-color: white
     }
     
     .acleft,
     .acright {
       float: left;
+      background-color: white
     }
     
     .acleft {
       width: 300px;
       padding: 0px 30px;
+      background-color: white
     }
     
     .acright {
       width: 378px;
+      background-color: white
     }
     
     .acright img {
@@ -204,11 +221,11 @@
       //console.log(achead[a].parentElement.className.indexOf('bru'));
       if (achead[a].parentElement.className.indexOf('bru') > -1) {
         achead[a].style.backgroundImage = "url('bru-closed.jpg')";
-        achead[a].style.color = "#532997";
+        achead[a].style.color = "white";
         //console.log(achead[a].innerHTML + ' bru here');
       } else if (achead[a].parentElement.className.indexOf('tru') > -1) {
         achead[a].style.backgroundImage = "url('tru-closed.jpg')";
-        achead[a].style.color = "#005faf";
+        achead[a].style.color = "white";
         //console.log(achead[a].innerHTML + ' tru here');
       }
 

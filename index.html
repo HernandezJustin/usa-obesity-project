@@ -21,7 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    
+
 
   </head>
 
@@ -58,14 +58,37 @@
 
     <!-- Header -->
     <header class="header" id="top">
-      <div class="text-vertical-center">
-        <h1 id="title" style="font-family: 'Alfa Slab One', cursive; letter-spacing: 2px; opacity: 0;">Obesity</h1>
-        <div id="container" style="position: relative; width: 500px; height: 300px; margin-left: 400px; margin-top: 30px;"></div>
+      <div style="max-width: 1200px; margin: 0 auto;">
+      <!-- <div class="text-vertical-center"> -->
+        <div id="carton-label"><h6 id="title" style="font-family: 'Alfa Slab One', cursive; letter-spacing: 2px;">Hover Over States In the USA to See Their<br> Adult Obesity Rate Percentage(2016)</h6></div>
+        <div id="container"></div>
+      <!-- </div> -->
+      <div id="legend">
+        <h3 style="font-family: 'Alfa Slab One'">Map Legend</h3>
+        <ul style="list-style-type: none; text-align: left; padding: 0;">
+          <li>Very High Obestity: <div class="color-box" style="background-color: #800080;"></div></li>
+          <li>High Obestity: <div class="color-box" style="background-color: #FF0000;"></div></li>
+          <li>Moderate Obesity: <div class="color-box" style="background-color: #FFA500;"></div></li>
+          <li>Low Obesity: <div class="color-box" style="background-color: #40FF40;"></div></li>
+        </ul>
+      </div>
       </div>
     </header>
 
-    
+    <div class="facts-container">
+    <h1 style="font-family: 'Alfa Slab One'; text-align: center;">Obesity Facts</h1>
 
+      <div class="text-container"><h3></h3></div>
+      <div class="images-container">
+        <div class="image-slides"><img src="images/img1.jpg" alt=""></div>
+        
+        <div class="image-slides"><img src="images/img2.png" alt=""></div>
+        
+        <div class="image-slides"><img src="images/img3.png" alt=""></div>
+        
+      </div>
+    </div>
+  
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -80,6 +103,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
+    <script>
+    var $textArray = ['The state of Colorado has the lowest rate of obesity as of 2016','Obesity has a plethora of causes that go beyond unbalanced diets', 'In Louisiana, 1 in 3 people are obese']
+    var i = 0 
+
+      $(document).ready(function(){
+        setInterval(function(){
+          $('.text-container > h3').text($textArray[i])
+          i++
+          $('.images-container > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.images-container')
+          if(i > 2){i = 0}
+        }, 3000);
+
+        // setInterval(function(){
+          
+        // }, 3000);
+      });
+    </script>
 
   </body>
 

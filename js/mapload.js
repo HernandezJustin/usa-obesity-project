@@ -4,7 +4,7 @@ var election = new Datamap({
   geographyConfig: {
     highlightBorderColor: '#bada55',
    popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + '<br>Obesity Rate Percentage(Adults):' +  data.obesityRate + '%'
+      return '<div class="hoverinfo">' + geography.properties.name +  '<br>' +  data.obesityRate + '%'
     },
     highlightBorderWidth: 3
   },
@@ -221,6 +221,6 @@ data:{
 });
 election.labels();
 
-$(document).ready(function(){
-  $("#title").delay(2000).animate({ opacity: 1 }, 700);
-});
+// $(document).ready(function(){
+//   $("#title").delay(2000).animate({ opacity: 1 }, 700);
+// });
